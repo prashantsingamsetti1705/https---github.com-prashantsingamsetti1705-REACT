@@ -23,7 +23,12 @@ const App=()=>{
         setNum(num+10)
       }}>increment</button>
       <button onClick={()=>{
-        setNum(num-10)}}>decrement</button>
+         if(num>0){
+         setNum(num-10)
+        }}}>decrement</button>
+        <button onClick={()=>{
+          setNum(0)
+        }}>reset</button>
     </div>
   )
 }
